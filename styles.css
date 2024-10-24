@@ -1,0 +1,58 @@
+/* Общий стиль для всего сайта */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ffcc70, #ff5757);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Легкое увеличение карточки при наведении */
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: #ff5757;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #ffcc70;
+    transform: translateY(-5px); /* Легкое приподнятие кнопки при наведении */
+}
+
+button:active {
+    background-color: #ffcc70;
+    transform: translateY(0); /* Возвращение на место при нажатии */
+}
